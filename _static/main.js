@@ -26,4 +26,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         addLineDivs(starBg[i], "star");
     }
 
+    var log4jBg = document.querySelectorAll("[data-background-hash='null600px 600px_static/log4j-bg.pngnullnull#f2e8e7nullno-repeatleft -200px bottom -200pxnullnull']");
+    for (var i = 0; i < log4jBg.length; i++) {
+        console.log(log4jBg[i]);
+        addLineDivs(log4jBg[i], "log4j");
+    }
+
 });

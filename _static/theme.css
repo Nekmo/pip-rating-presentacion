@@ -106,6 +106,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   position: fixed;
   background: #331E00;
   z-index: 105; }
+  .line.star {
+    background: #FF9800; }
+  .line.log4j {
+    background: #E94B39; }
   .line.top {
     left: 0;
     top: 0;
@@ -459,10 +463,10 @@ ul li {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
   padding: 15px; }
 
-#intro h1, #intro h2, #intro h3 {
+#intro h1, #intro h2, #intro h3, #log4j h1, #log4j h2, #log4j h3, #dependencias h1, #dependencias h2, #dependencias h3 {
   display: none; }
 
-#intro img {
+#intro img, #log4j img {
   background: none; }
 
 #intro h1, #intro h2, #id2 h1, #id2 h2 {

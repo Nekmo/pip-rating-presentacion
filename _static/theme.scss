@@ -59,6 +59,8 @@ $sunshine: #FF9800;
 // the color of the thick border surrounding the presention
 $borderColor: $hotPink;
 
+$log4jColor: #E94B39;
+
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
@@ -94,6 +96,14 @@ section.has-light-background {
 }
 
 .line {
+  &.star {
+    background: $sunshine;
+  }
+
+  &.log4j {
+    background: $log4jColor;
+  }
+
   content: '';
   position: fixed;
   background: $borderColor;
@@ -235,14 +245,14 @@ ul li {
 }
 
 // Slides without title
-#intro {
+#intro, #log4j, #dependencias {
   h1, h2, h3 {
     display: none;
   }
 }
 
 // Images without background
-#intro {
+#intro, #log4j {
   img {
     background: none;
   }
