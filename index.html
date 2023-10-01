@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <title>Pip-rating</title>
+    <link rel="stylesheet" type="text/css" href="_static/revealjs4/dist/reveal.css" />
+    <link rel="stylesheet" href="_static/revealjs4/dist/theme/.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme.css" />
+    <script src="_static/main.js"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="next" title="Presentación pip-rating" href="README.html" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  </head><body>
+    <div class="reveal">
+        <div class="slides" role="main">
+            <div class="toctree-wrapper compound">
+</div>
+<section data-transition="zoom" data-background-color="#fff5e7" data-background-image="_static/pip-rating-white.svg" data-background-repeat="no-repeat" data-background-position="left bottom" data-background-size="600px 600px" id="intro">
+<h1>Pip-rating</h1>
+<a class="reference internal image-reference" href="_images/logo.png"><img alt="_images/logo.png" src="_images/logo.png" style="width: 800px;" /></a>
+<aside class="notes">Hola a todos.</aside></section>
+<section data-transition="convex" data-background-color="#fff5e7" data-background-image="_static/pip-rating-white.svg" data-background-repeat="no-repeat" data-background-position="left bottom" data-background-size="600px 600px" id="id1">
+<h2>👋</h2>
+<aside class="notes">Seguramente a muchos os suene este logo de aquí</aside></section>
+<section data-transition="zoom" data-background-color="#f2e8e7" data-background-image="_static/log4j-bg.png" data-background-repeat="no-repeat" data-background-position="left -200px bottom -200px" data-background-size="600px 600px" id="log4j">
+<h2>Log4J</h2>
+<a class="reference internal image-reference" href="_images/log4j-logo.png"><img alt="_images/log4j-logo.png" src="_images/log4j-logo.png" style="width: 1024px;" /></a>
+<aside class="notes">El zero-day de Log4J puso en jaque a medio mundo. Una biblioteca usada por millones de aplicaciones, de forma
+directa o indirecta, la cual no estaba todo lo mantenida que se necesitaba.</aside></section>
+<section data-transition="slide" data-background-color="#f2e8e7" data-background-image="_static/log4j-bg.png" data-background-repeat="no-repeat" data-background-position="left -200px bottom -200px" data-background-size="600px 600px" id="dependencias">
+<h2>Dependencias</h2>
+<a class="reference internal image-reference" href="_images/dependency.png"><img alt="_images/dependency.png" src="_images/dependency.png" style="height: 600px;" /></a>
+<aside class="notes">Randal Munroe ya avisó sobre este peligro con esta tira de XKCD. Puede haber una dependencia escondida de la que
+dependan muchos grandes proyectos, sin que se mantenga como debería. Y para dar solución a este problema, está
+este proyecto personal. Pero antes, dejadme que me presente.</aside></section>
+<section data-transition="concave" data-background-color="#fff5e7" data-background-image="_static/pip-rating-white.svg" data-background-repeat="no-repeat" data-background-position="left bottom" data-background-size="600px 600px" id="sobre-mi-nekmo">
+<h2>Sobre mí <strong>Nekmo</strong></h2>
+<table class="docutils align-default" id="sobre-mi">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="_images/cara.svg"><img alt="_images/cara.svg" src="_images/cara.svg" width="200px" /></a>
+<p><em>Programador Python</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">Soy Juan José, más conocido en redes como Nekmo, programador Python desde hace más de media vida, y autor de esta
+herramienta de software libre.</aside></section>
+<section data-transition="slide" data-background-color="#fff5e7" data-background-image="_static/pip-rating-white.svg" data-background-repeat="no-repeat" data-background-position="left bottom" data-background-size="600px 600px" id="id2">
+<h2>Pip-rating</h2>
+<a class="reference internal image-reference" href="_images/logo.png"><img alt="_images/logo.png" src="_images/logo.png" style="width: 800px;" /></a>
+<aside class="notes">pip-rating. Pip-rating es una utilidad que analiza el fichero requirements de vuestro proyecto y os da una puntuación.</aside></section>
+<section data-transition="slide" data-background-color="#B3E0DB" data-background-gradient="linear-gradient(180deg, #63dacd 0%, #B3E0DB 20%)" id="puntuacion">
+<h2>Puntuación</h2>
+<a class="reference internal image-reference" href="_images/score.png"><img alt="_images/score.png" src="_images/score.png" style="width: 1024px;" /></a>
+<aside class="notes">Esta puntuación, que representa la confianza que aportan vuestras dependencias, se calcula según diferentes
+parámetros.</aside></section>
+<section data-transition="zoom" data-background-color="#fff5e7" data-background-image="_static/pip-rating-white.svg" data-background-repeat="no-repeat" data-background-position="left bottom" data-background-size="600px 600px" id="criterios-puntuacion">
+<h2>Criterios puntuación</h2>
+<ul class="simple">
+<li class="fragment"><p>⌛ <strong>Antigüedad</strong> de la biblioteca</p></li>
+<li class="fragment"><p>🧑 Tamaño de su <strong>comunidad</strong></p></li>
+<li class="fragment"><p>🔧 <strong>Mantenimiento</strong> de la misma</p></li>
+<li class="fragment"><p>🐞 <strong>Vulnerabilidades</strong> conocidas que afecten</p></li>
+<li class="fragment"><p>🕵️ Posible <strong>impersonación</strong> de la biblioteca</p></li>
+</ul>
+<aside class="notes">Como pueden ser (1) su antigüedad, (2) comunidad, (3) mantenimiento, (4) vulnerabilidades conocidas que afecten,
+o (5) la posible impersonación de la biblioteca.</aside></section>
+<section data-transition="slide" data-background-color="#2B2B2B" id="vista-general">
+<h2>Vista general</h2>
+<a class="reference internal image-reference" href="_images/text-view.png"><img alt="_images/text-view.png" src="_images/text-view.png" style="width: 550px;" /></a>
+<aside class="notes">Y podréis verlo en diferentes vistas como la vista general, que os ofrece un mayor detalle.</aside></section>
+<section data-transition="slide" data-background-color="#2B2B2B" id="vista-en-arbol">
+<h2>Vista en árbol</h2>
+<a class="reference internal image-reference" href="_images/tree-view.png"><img alt="_images/tree-view.png" src="_images/tree-view.png" style="width: 600px;" /></a>
+<aside class="notes">O la vista en árbol, que os permite ver las dependencias de forma jerárquica, entre otras vistas disponibles.</aside></section>
+<section data-transition="zoom" data-background-color="#FFFFFF" data-background-image="_static/github-bg.svg" data-background-repeat="no-repeat" data-background-size="600px 600px" data-background-position="left -100px bottom -100px" id="github-actions">
+<h2>Github Actions</h2>
+<a class="reference internal image-reference" href="_images/github-actions-logo.png"><img alt="_images/github-actions-logo.png" src="_images/github-actions-logo.png" style="width: 613px;" /></a>
+<aside class="notes">Y para usarlo no tenéis ni que instalarlo, porque está disponible en Github Actions.</aside></section>
+<section data-transition="slide" data-background-color="#FFFFFF" data-background-image="_static/github-bg.svg" data-background-repeat="no-repeat" data-background-size="600px 600px" data-background-position="left -100px bottom -100px" id="badge">
+<h2>Badge</h2>
+<a class="reference internal image-reference" href="_images/pip-rating-badge.svg"><img alt="_images/pip-rating-badge.svg" src="_images/pip-rating-badge.svg" width="800px" /></a>
+<aside class="notes">Y os genera automáticamente un badge como este para que podáis incluirlo en vuestro proyecto.</aside></section>
+<section data-transition="slide" data-background-color="#FFFFFF" data-background-image="_static/github-bg.svg" data-background-repeat="no-repeat" data-background-size="600px 600px" data-background-position="left -100px bottom -100px" id="gh-nekmo-pip-rating">
+<h2><strong>GH:</strong> Nekmo/<strong>pip-rating</strong></h2>
+<a class="reference internal image-reference" href="_images/qr-code.svg"><img alt="_images/qr-code.svg" src="_images/qr-code.svg" width="60%" /></a>
+<aside class="notes">Y aquí tenéis el QR con el proyecto y la dirección arriba.</aside></section>
+<section>
+<section data-background-gradient="linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);" id="muchas-gracias-a-todos">
+<h2>¡Muchas gracias a todos!</h2>
+<aside class="notes">Y eso es todo, ¡muchas gracias a todos!</aside></section>
+<section data-transition="zoom" data-background-color="#fff5e7" data-background-image="_static/pip-rating-white.svg" data-background-repeat="no-repeat" data-background-position="left bottom" data-background-size="600px 600px" id="contactar">
+<h3><strong>Contactar</strong></h3>
+<ul class="simple">
+<li><p>🌐 <strong>Sitio web:</strong> <a class="reference external" href="https://nekmo.com">nekmo.com</a></p></li>
+<li><p>📫 <strong>Email:</strong> <a class="reference external" href="mailto:contacto&#37;&#52;&#48;nekmo&#46;com">contacto<span>&#64;</span>nekmo<span>&#46;</span>com</a></p></li>
+<li><p>🐦 <strong>Twitter:</strong> <a class="reference external" href="https://twitter.com/nekmocom">&#64;nekmocom</a></p></li>
+<li><p>📱 <strong>Telegram:</strong> <a class="reference external" href="https://t.me/nekmo">&#64;nekmo</a></p></li>
+<li><p>💡 <strong>Jabber:</strong> <a class="reference external" href="xmpp://nekmo&#64;nekmo.org">nekmo&#64;nekmo.org</a></p></li>
+</ul>
+<aside class="notes">Aquí tenéis mi contacto si queréis contactar conmigo.</aside></section>
+</section>
+
+        </div>
+    </div>
+    
+    <script src="_static/revealjs4/dist/reveal.js"></script>
+    
+    
+      <script src="_static/revealjs4/plugin/notes/notes.js"></script>
+      <script src="_static/revealjs4/plugin/highlight/highlight.js"></script>
+      
+    
+    <script>
+        var revealjsConfig = new Object();
+        Object.assign(revealjsConfig, 
+    {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        margin: 0.2,        
+        transition: "slide",
+    }
+);
+        
+        
+        
+          revealjsConfig.plugins = [
+            RevealNotes,RevealHighlight,
+          ];
+        
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize(revealjsConfig);
+    </script>
+
+  </body>
+</html>
