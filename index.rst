@@ -90,6 +90,7 @@ Dependencias
   este proyecto personal. Pero antes, dejadme que me presente.
 
 
+
 Sobre mí **Nekmo**
 ==================
 
@@ -118,6 +119,143 @@ Sobre mí **Nekmo**
   herramienta de software libre.
 
 
+
+Pip-rating
+==========
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #fff5e7
+    :data-background-image: _static/pip-rating-white.svg
+    :data-background-repeat: no-repeat
+    :data-background-position: left bottom
+    :data-background-size: 600px 600px
+
+
+.. image:: images/logo.*
+  :width: 800
+
+.. revealjs-notes::
+
+  pip-rating es una herramienta que analiza el fichero requirements de vuestro proyecto y os da una puntuación.
+
+
+
+Puntuación
+==========
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #B3E0DB
+    :data-background-gradient: linear-gradient(180deg, #63dacd 0%, #B3E0DB 20%)
+
+.. image:: images/score.*
+  :width: 1024px
+
+.. revealjs-notes::
+
+   Esta puntuación, que representa la confianza que aportan vuestras dependencias, se calcula según diferentes
+   parámetros.
+
+
+
+Criterios puntuación
+====================
+
+.. revealjs-section::
+    :data-transition: zoom
+    :data-background-color: #fff5e7
+    :data-background-image: _static/pip-rating-white.svg
+    :data-background-repeat: no-repeat
+    :data-background-position: left bottom
+    :data-background-size: 600px 600px
+
+.. revealjs-fragments::
+
+    * ⌛ **Antigüedad** de la biblioteca
+    * 🧑 Tamaño de su **comunidad**
+    * 🔧 **Mantenimiento** de la misma
+    * 🐞 **Vulnerabilidades** conocidas que afecten
+    * 🕵️ Posible **impersonación** de la biblioteca
+
+.. revealjs-notes::
+
+  Como pueden ser (1) su antigüedad, (2) comunidad, (3) mantenimiento, (4) vulnerabilidades conocidas que afecten,
+  o (5) la posible impersonación de la biblioteca.
+
+
+
+Vista general
+=============
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #2B2B2B
+
+.. image:: images/text-view.*
+  :width: 550px
+
+.. revealjs-notes::
+
+    Y podréis verlo en diferentes vistas como la vista general, que os ofrece un mayor detalle.
+
+
+Vista en árbol
+==============
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #2B2B2B
+
+.. image:: images/tree-view.*
+    :width: 600px
+
+.. revealjs-notes::
+
+    O la vista en árbol, que os permite ver las dependencias de forma jerárquica, entre otras vistas disponibles.
+
+
+
+Github Actions
+==============
+
+.. revealjs-section::
+    :data-transition: zoom
+    :data-background-color: #FFFFFF
+    :data-background-image: _static/github-bg.svg
+    :data-background-repeat: no-repeat
+    :data-background-size: 600px 600px
+    :data-background-position: left -100px bottom -100px
+
+.. image:: images/github-actions-logo.*
+     :width: 613px
+
+.. revealjs-notes::
+
+    Y para usarlo no tenéis ni que instalarlo, porque está disponible en Github Actions.
+
+
+
+**GH:** Nekmo/**pip-rating**
+============================
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #FFFFFF
+    :data-background-image: _static/github-bg.svg
+    :data-background-repeat: no-repeat
+    :data-background-size: 600px 600px
+    :data-background-position: left -100px bottom -100px
+
+.. image:: images/qr-code.*
+     :width: 60%
+
+
+.. revealjs-notes::
+
+    Y aquí tenéis el QR con el proyecto y la dirección arriba.
+
+
 ¡Muchas gracias a todos!
 ========================
 
@@ -127,3 +265,24 @@ Sobre mí **Nekmo**
 .. revealjs-notes::
 
     Y eso es todo, ¡muchas gracias a todos!
+
+**Contactar**
+-------------
+
+.. revealjs-section::
+    :data-transition: zoom
+    :data-background-color: #fff5e7
+    :data-background-image: _static/pip-rating-white.svg
+    :data-background-repeat: no-repeat
+    :data-background-position: left bottom
+    :data-background-size: 600px 600px
+
+* **Sitio web:** `nekmo.com <https://nekmo.com>`_
+* **Email:** `contacto@nekmo.com <mailto:contacto@nekmo.com>`_
+* **Twitter:** `@nekmocom <https://twitter.com/nekmocom>`_
+* **Telegram:** `@nekmo <https://t.me/nekmo>`_
+* **Jabber:** `nekmo@nekmo.org <xmpp://nekmo@nekmo.org>`_
+
+.. revealjs-notes::
+
+   Aquí tenéis mi contacto si queréis contactar conmigo.

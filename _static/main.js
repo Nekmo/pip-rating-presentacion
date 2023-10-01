@@ -32,4 +32,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         addLineDivs(log4jBg[i], "log4j");
     }
 
+    var blackBg = document.querySelectorAll("[data-background-hash='0#2B2B2Bnullnullnullnullnull']");
+    for (var i = 0; i < blackBg.length; i++) {
+        console.log(blackBg[i]);
+        addLineDivs(blackBg[i], "black");
+    }
+
+    var githubBg = document.querySelectorAll("[data-background-hash='null600px 600px_static/github-bg.svgnullnull#FFFFFFnullno-repeatleft -100px bottom -100pxnullnull']");
+    for (var i = 0; i < githubBg.length; i++) {
+        console.log(githubBg[i]);
+        addLineDivs(githubBg[i], "github");
+    }
+
 });

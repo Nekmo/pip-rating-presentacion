@@ -60,6 +60,7 @@ $sunshine: #FF9800;
 $borderColor: $hotPink;
 
 $log4jColor: #E94B39;
+$githubColor: #1E88FF;
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -102,6 +103,14 @@ section.has-light-background {
 
   &.log4j {
     background: $log4jColor;
+  }
+
+  &.black {
+    background: #BBBBBB;
+  }
+
+  &.github {
+    background: $githubColor;
   }
 
   content: '';
@@ -163,13 +172,6 @@ body::before {
     z-index: -1;
 }
 
-
-// don't show the colored frame against dark backgrounds
-.reveal.has-dark-background {
-  .line {
-    display: none;
-  }
-}
 
 // Theme template ------------------------------
 @import "./template.scss";
@@ -245,7 +247,7 @@ ul li {
 }
 
 // Slides without title
-#intro, #log4j, #dependencias {
+#intro, #log4j, #dependencias, #id2, #puntuacion, #github-actions {
   h1, h2, h3 {
     display: none;
   }
@@ -295,13 +297,35 @@ ul li {
 
 }
 
+#criterios-puntuacion {
+  h2 {
+    color: $sunshine;
+  }
 
-#como-puedo-conseguirlo {
-  strong {
-    color: $hotPink;
-    font-size: 2em;
+  ul li {
+    list-style: none;
+
+    p {
+      font-size: 120%;
+
+      strong {
+        color:  $hotPink;
+      }
+    }
   }
 }
+
+
+#gh-nekmo-pip-rating {
+  h2 {
+    font-size: 2.3em;
+  }
+
+  strong {
+    color: $githubColor;
+  }
+}
+
 
 #muchas-gracias-a-todos {
   h2 {

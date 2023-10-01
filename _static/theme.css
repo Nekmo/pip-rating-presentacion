@@ -110,6 +110,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
     background: #FF9800; }
   .line.log4j {
     background: #E94B39; }
+  .line.black {
+    background: #BBBBBB; }
+  .line.github {
+    background: #1E88FF; }
   .line.top {
     left: 0;
     top: 0;
@@ -155,9 +159,6 @@ body::before {
   background: url(background.png) repeat-x;
   will-change: transform;
   z-index: -1; }
-
-.reveal.has-dark-background .line {
-  display: none; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -463,7 +464,7 @@ ul li {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
   padding: 15px; }
 
-#intro h1, #intro h2, #intro h3, #log4j h1, #log4j h2, #log4j h3, #dependencias h1, #dependencias h2, #dependencias h3 {
+#intro h1, #intro h2, #intro h3, #log4j h1, #log4j h2, #log4j h3, #dependencias h1, #dependencias h2, #dependencias h3, #id2 h1, #id2 h2, #id2 h3, #puntuacion h1, #puntuacion h2, #puntuacion h3, #github-actions h1, #github-actions h2, #github-actions h3 {
   display: none; }
 
 #intro img, #log4j img {
@@ -495,9 +496,21 @@ ul li {
   width: 40%;
   display: inline-block; }
 
-#como-puedo-conseguirlo strong {
-  color: #331E00;
-  font-size: 2em; }
+#criterios-puntuacion h2 {
+  color: #FF9800; }
+
+#criterios-puntuacion ul li {
+  list-style: none; }
+  #criterios-puntuacion ul li p {
+    font-size: 120%; }
+    #criterios-puntuacion ul li p strong {
+      color: #331E00; }
+
+#gh-nekmo-pip-rating h2 {
+  font-size: 2.3em; }
+
+#gh-nekmo-pip-rating strong {
+  color: #1E88FF; }
 
 #muchas-gracias-a-todos h2 {
   color: white;
