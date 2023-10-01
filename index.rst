@@ -277,11 +277,11 @@ Github Actions
     :data-background-position: left bottom
     :data-background-size: 600px 600px
 
-* **Sitio web:** `nekmo.com <https://nekmo.com>`_
-* **Email:** `contacto@nekmo.com <mailto:contacto@nekmo.com>`_
-* **Twitter:** `@nekmocom <https://twitter.com/nekmocom>`_
-* **Telegram:** `@nekmo <https://t.me/nekmo>`_
-* **Jabber:** `nekmo@nekmo.org <xmpp://nekmo@nekmo.org>`_
+* 🌐 **Sitio web:** `nekmo.com <https://nekmo.com>`_
+* 📫 **Email:** `contacto@nekmo.com <mailto:contacto@nekmo.com>`_
+* 🐦 **Twitter:** `@nekmocom <https://twitter.com/nekmocom>`_
+* 📱 **Telegram:** `@nekmo <https://t.me/nekmo>`_
+* 💡 **Jabber:** `nekmo@nekmo.org <xmpp://nekmo@nekmo.org>`_
 
 .. revealjs-notes::
 

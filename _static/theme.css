@@ -480,6 +480,9 @@ ul li {
   text-transform: none;
   font-size: 1.5em; }
 
+#id1 {
+  font-size: 2em; }
+
 #sobre-mi h3 {
   width: 40%;
   font-size: 2.5em;
@@ -496,14 +499,14 @@ ul li {
   width: 40%;
   display: inline-block; }
 
-#criterios-puntuacion h2 {
+#criterios-puntuacion h2, #contactar h2 {
   color: #FF9800; }
 
-#criterios-puntuacion ul li {
+#criterios-puntuacion ul li, #contactar ul li {
   list-style: none; }
-  #criterios-puntuacion ul li p {
+  #criterios-puntuacion ul li p, #contactar ul li p {
     font-size: 120%; }
-    #criterios-puntuacion ul li p strong {
+    #criterios-puntuacion ul li p strong, #contactar ul li p strong {
       color: #331E00; }
 
 #gh-nekmo-pip-rating h2 {

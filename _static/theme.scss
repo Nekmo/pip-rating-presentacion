@@ -274,6 +274,10 @@ ul li {
     }
 }
 
+#id1 {
+ font-size: 2em;
+}
+
 #sobre-mi {
   h3 {
     width: 40%;
@@ -297,7 +301,7 @@ ul li {
 
 }
 
-#criterios-puntuacion {
+#criterios-puntuacion, #contactar {
   h2 {
     color: $sunshine;
   }
