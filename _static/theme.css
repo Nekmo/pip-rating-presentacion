@@ -464,7 +464,7 @@ ul li {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
   padding: 15px; }
 
-#intro h1, #intro h2, #intro h3, #log4j h1, #log4j h2, #log4j h3, #dependencias h1, #dependencias h2, #dependencias h3, #id2 h1, #id2 h2, #id2 h3, #puntuacion h1, #puntuacion h2, #puntuacion h3, #github-actions h1, #github-actions h2, #github-actions h3 {
+#intro h1, #intro h2, #intro h3, #log4j h1, #log4j h2, #log4j h3, #dependencias h1, #dependencias h2, #dependencias h3, #id2 h1, #id2 h2, #id2 h3, #puntuacion h1, #puntuacion h2, #puntuacion h3, #github-actions h1, #github-actions h2, #github-actions h3, #badge h1, #badge h2, #badge h3 {
   display: none; }
 
 #intro img, #log4j img {

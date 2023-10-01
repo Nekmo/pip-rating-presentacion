@@ -137,7 +137,7 @@ Pip-rating
 
 .. revealjs-notes::
 
-  pip-rating es una herramienta que analiza el fichero requirements de vuestro proyecto y os da una puntuación.
+  pip-rating. Pip-rating es una utilidad que analiza el fichero requirements de vuestro proyecto y os da una puntuación.
 
 
 
@@ -234,6 +234,25 @@ Github Actions
 
     Y para usarlo no tenéis ni que instalarlo, porque está disponible en Github Actions.
 
+
+
+Badge
+=====
+
+.. revealjs-section::
+    :data-transition: slide
+    :data-background-color: #FFFFFF
+    :data-background-image: _static/github-bg.svg
+    :data-background-repeat: no-repeat
+    :data-background-size: 600px 600px
+    :data-background-position: left -100px bottom -100px
+
+.. image:: images/pip-rating-badge.*
+     :width: 800px
+
+.. revealjs-notes::
+
+    Y os genera automáticamente un badge como este para que podáis incluirlo en vuestro proyecto.
 
 
 **GH:** Nekmo/**pip-rating**
